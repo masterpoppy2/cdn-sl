@@ -1,0 +1,23 @@
+//SynchroSketch-style.css
+@import url(http: //fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body, div, .ui {
+    font-family: 'Noto Sans', 'Noto Sans Japanese', arial, helvetica, 'hiragino kaku gothic pro', meiryo, 'MS PGothic', sans-serif !important;
+}
+
+.ui.container {
+    width: 100vw;
+}
+
+#canvas, #canvas-1 {
+    background-color: #F8F8F8;
+    height: calc(100vh - 164px);
+    width: 100vw;
+}
+
+#canvas-1 {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
