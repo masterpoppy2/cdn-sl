@@ -422,14 +422,16 @@ $(function() {
     $('#save').on('click', function() {
         html2canvas(document.getElementById('canvas-1'), {
             onrendered: function(canvas) {
-                var file = document.createElement('a');
+                var file = document.getElementById('save-image');
+                // var file = document.createElement('a');
                 var imgData = canvas.toDataURL();
                 file.href = imgData;
-                file.target = '_blank';
+                // file.target = '_blank';
                 file.download = 'SynchroSketch.png';
-                file.click();
+                // file.click();
             }
         });
+        $('#save-ui').modal('show');
     });
 
     $('#sync').on('click', function() {
